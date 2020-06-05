@@ -27,7 +27,14 @@
   </a-marker>
 
 
-  <a-entity camera></a-entity>
+    <!-- ③ 作成したマーカーでのソース -->
+    <a-marker type='pattern' url='marker/pattern-marker.patt'>
+      <a-assets>
+        <img id="transpImage" src="stamp.png">
+    </a-assets>
+    </a-marker>
+
+    <a-entity camera></a-entity>
 </a-scene>
 </body>
 </html>
